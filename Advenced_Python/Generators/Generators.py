@@ -9,7 +9,7 @@ print(next(itr))
 for c in remote_control_next():
     print(c)
 
-# fibronacii sequence 0,1,1,2,3,5,8,13,21..
+# fibronaci sequence 0,1,1,2,3,5,8,13,21..
 def fib():
     a,b = 0,1
     while True:
