@@ -14,3 +14,12 @@ s = set([1,2,3,4,5,2,3])
 print(s)
 even = {i for i in numbers if i not in even}
 print(even)
+cities = ["mumbai","new york","paris"]
+countries=["india","usa","france"]
+z = zip(cities,countries)
+
+for i in z:
+    print(i)
+
+d = {city:country for city,country in zip(cities,countries)}
+print(d)
