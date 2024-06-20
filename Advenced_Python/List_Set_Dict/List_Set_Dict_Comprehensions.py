@@ -23,3 +23,16 @@ for i in z:
 
 d = {city:country for city,country in zip(cities,countries)}
 print(d)
+
+#exercice:
+# set1 = {1, 2, 3, 4, 5}
+# set2 = {4, 5, 6, 7, 8}
+#
+# diffrence
+# between
+# set1 and set2 is {1, 2, 3}
+
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+d ={i for i in set1 if i not in set2}
+print(d)
