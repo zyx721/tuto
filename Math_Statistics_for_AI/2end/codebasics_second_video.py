@@ -39,5 +39,5 @@ m2 = ndf.price_per_sqft.mean() + ndf.price_per_sqft.std()*4
 df['zscore'] = (ndf.price_per_sqft - ndf.price_per_sqft.mean())/ndf.price_per_sqft.std()
 newdf = df[(df.zscore > -4) & (df.zscore < 4)]
 print(newdf.shape)
-plt.hist(ndf.price_per_sqft,bins=20, rwidth=0.8)
+plt.hist(ndf.price_per_sqft,bins=20, rwidth=0.8,density=True)
 plt.show()
