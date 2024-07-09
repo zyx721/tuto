@@ -1,6 +1,20 @@
 import matplotlib.pyplot as plt
-import pandas as np
-df = np.read_csv("income.csv")
+import pandas as pd
+import seaborn as sns
+
+# Read the CSV file
+df = pd.read_csv("income.csv")
 print(df)
-df.plot(x='income($)',y='count')
+
+# Plot with logarithmic x-axis
+
+
+
+# Set seaborn plot size
+sns.set(rc={'figure.figsize':(11.7, 8.27)})
+
+# Create a bar plot
+g = sns.barplot(x='income($)', y='count', data=df)
+g.set_xticklabels(g.get_xticklabels(), rotation=45, horizontalalignment='right')
+g.set(xscale="log")
 plt.show()
