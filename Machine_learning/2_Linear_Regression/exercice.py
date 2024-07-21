@@ -13,3 +13,4 @@ d = df.drop("per capita income (US$)",axis='columns')
 model = linear_model.LinearRegression()
 model.fit(d,df["per capita income (US$)"],)
 print(model.predict([[2020]]))
+df.dr
