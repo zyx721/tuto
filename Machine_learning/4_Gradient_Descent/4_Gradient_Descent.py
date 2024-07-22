@@ -17,5 +17,7 @@ def gradient_descent(x,y):
 
 x = np.array([1,2,3,4,5])
 y = np.array([5,7,9,11,13])
+import pandas as pd
+df = pd.read_csv("test_scores.csv",index_col=False)
 
-gradient_descent(x,y)
+print(df)
